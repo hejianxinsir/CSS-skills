@@ -1,0 +1,9 @@
+/* 
+	按钮点击的时候，会显示自带的点击边框，由于太丑了我看不惯，所以我想消除它。
+	但是，你得让用户知道他点击了哪一个 button，所以还是要加个 border。
+*/
+
+element:focus{
+	outline: none;
+	border: 1px solid black;
+}
