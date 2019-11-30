@@ -1,0 +1,25 @@
+
+/* 定宽元素 */
+
+element{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 文字左右居中 */
+
+element{
+  text-align: center;
+}
+
+/* 用绝对定位。思路是这样，具体要调整才能完全居中*/
+.father{
+  position: relative;
+}
+
+.son{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
