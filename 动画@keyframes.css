@@ -1,0 +1,25 @@
+/* 定义一个 @keyframes 动画 */
+
+@keyframes big{
+  0%{ transform: scale(0.1); }
+  100%{ transform: scale(10); }
+}
+
+.father{
+  animation: 1s big;
+  overflow: hidden;  /* 这一句看情况加 */
+}
+
+/* 如何拿到鼠标点击的位置？
+   比如有一个点击事件,如下
+   你可以在括号里加一个 event
+   把 event 打出来
+   在打印出来的东西里找位置
+*/
+
+x(event){
+  console.log(event)
+  this.setState({
+    active: true
+  })
+}
