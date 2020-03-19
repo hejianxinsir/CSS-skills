@@ -1,0 +1,8 @@
+/* 比如在一个按钮里，点击一下出现一个圆点，给圆点一个放大的 animation ，点击完后，让这个圆点不再回到圆点的状态 */
+
+animation: 1s big forwards;  /* 关键是 forwards */
+
+@keyframes big{
+  0%{ transform: scale(0.1) }
+  100%{ transform: scale(10) }
+}
